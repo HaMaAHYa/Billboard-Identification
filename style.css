@@ -393,6 +393,10 @@ input.textbox{
     display: inline-block;
 }
 
+#backwave{
+    width: 100%;
+}
+
 @media (min-width:1400px){
     .fa-arrow-right-to-bracket{
         margin-left: 47%;
@@ -411,7 +415,7 @@ input.textbox{
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:380px) {
     header ul li{
         padding: 4px;
         justify-content: center;
