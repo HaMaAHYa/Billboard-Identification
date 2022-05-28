@@ -47,7 +47,7 @@ html{
 body{
     z-index: -1;
     background: url(background.PNG);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: auto;   
 }
 
@@ -275,50 +275,6 @@ body{
 
 }
 
-
-
-/* สนามเด็กเล่น */
-
-.ควย{
-    position: absolute;
-    animation: dickmove 2s infinite;
-    z-index: 999;
-    left: 40%;
-    top: 50%;
-}
-
-.ไข่1{
-    width: 50px;
-    height: 50px;
-    background: red;
-    border-radius: 50%;
-}
-
-.ไข่2{
-    width: 50px;
-    height: 50px;
-    background: red;
-    border-radius: 50%;
-    left: 50%;
-}
-
-.ลำ{
-    width: 300px;
-    height: 50px;
-    background: red;
-    border-radius: 30px;
-    margin-top: -25%;
-    margin-left: 5%;
-}
-
-@keyframes dickmove {
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(360deg);}
-    
-    
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Smooch&family=Tiro+Bangla&display=swap');
 
 .signinbyton{
@@ -435,4 +391,60 @@ input.textbox{
 
 .point1:hover::after{
     display: inline-block;
+}
+
+@media (min-width:1400px){
+    .fa-arrow-right-to-bracket{
+        margin-left: 47%;
+    }
+    form .fa-magnifying-glass{
+        left: 65%;
+    }
+    .fa-user{
+        margin-left: 81%;
+    }   
+}
+
+@media (min-width:1500px){
+    .fa-arrow-right-to-bracket{
+        margin-left: 52%;
+    }
+}
+
+@media (max-width:500px) {
+    header ul li{
+        padding: 4px;
+        justify-content: center;
+    }
+    header ul li a{
+        font-size: 12px;
+    }
+    .fa-arrow-right-to-bracket{
+        font-size: 12px;
+        margin-left: 10%;
+    }
+
+    form .fa-magnifying-glass{
+        top: 81%;
+        left: 88%;
+    }
+    form input{
+        width: 450px;
+        height: 40px;
+    }
+    .drop1-content a{
+        font-size: 10px;
+    }
+    .drop1-content{
+        min-width: 120px;
+    }
+    .fa-user{
+        margin-left: 65%;
+    }
+    .map{
+        left: 20%;
+    }
+    .point1{
+        left: 60%;
+    }
 }
